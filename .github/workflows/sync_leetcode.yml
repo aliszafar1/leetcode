@@ -10,6 +10,8 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      - run: |
+          echo $(date +%Y) 
       - name: Sync
         uses: joshcai/leetcode-sync@v1.5
         with:
