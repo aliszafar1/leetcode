@@ -10,8 +10,8 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - run: |
-          echo("Hello world") 
+      - name: Echo
+          echo "Hello world"
       - name: Sync
         uses: joshcai/leetcode-sync@v1.5
         with:
